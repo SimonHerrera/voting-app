@@ -6,10 +6,16 @@
   </head>
   <div ng-app="app">
     <div ng-controller="MainCtrl as main">
-
       <h1>{{main.heading}}</h1>
+      <div>
+        <button ng-click="main.curry()">Curry</button>{{main.curryCount}}
+      </div>
+      <div>
+        <button ng-click="main.bron()">Bron</button>{{main.bronCount}}
+      </div>
     </div>
   </div>
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="main.js"></script>
+  <script src="lib/firebase/firebase.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="main.js"></script>
 </html>
